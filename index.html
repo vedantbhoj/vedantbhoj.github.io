@@ -1,402 +1,293 @@
 <!DOCTYPE html>
-<html ng-app="resumeApp">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description"
-    content="Vedant Bhoj is an experienced Software Engineer 👩‍💻 with a Masters degree 👨‍🎓 from San Jose State University. He works at HealthLevel in Mountain View, California as a Full Stack Data Engineer.">
-  <meta name="Keywords"
-    content="Full Stack, Data Engineer, Software Engineer, Computer Science, .NET, C#, JavaScript, SQL, OLTP, OLAP, SJSU, San Jose State University, Masters, Graduate, Web Development">
-  <title>Vedant Bhoj</title>
-
-  <!--stylesheets-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/simpletextrotator.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/timeline.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/all.css">
+  <title>Vedant Bhoj · Software Engineer</title>
+  <meta name="description" content="Vedant Bhoj is a full-stack software engineer building healthcare analytics at HealthLevel in Silicon Valley. MS in Computer Engineering, San Jose State University.">
+  <meta property="og:title" content="Vedant Bhoj · Software Engineer">
+  <meta property="og:description" content="Full-stack engineer building healthcare analytics. Previously Cognizant. MS, San Jose State University.">
+  <meta property="og:image" content="res/images/profile_v3.jpg">
   <link rel="icon" href="res/images/page_icon.png">
-
-  <!--scripts-->
-  <!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
-  <script type="text/javascript"
-    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-sanitize.js"></script>
-  <script src="js/controller.js"></script>
-  <script src="js/jquery.simple-text-rotator.min.js"></script>
-  <script src="js/main.js"></script>
-  <!-- <script src="js/all.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134614952-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-134614952-1');
-  </script>
-
-  <script>
-    new WOW().init();
-  </script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+<body>
+  <a class="skip" href="#work">Skip to content</a>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" ng-controller="resumeCtrl">
-  <!--navigation-->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand bigEntrance" href="{{resume_data.personal_info.resume_link}}">
-          <span class="glyphicon glyphicon-save-file pulse"></span> RESUME</a>
+  <header class="top">
+    <a class="mark" href="#top" aria-label="Vedant Bhoj, home">VB</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#words">Endorsements</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-small" href="res/resume/Vedant Rajay Bhoj Resume.pdf">Resume (PDF)</a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <img class="portrait" src="res/images/profile_v3.jpg" width="132" height="132" alt="Vedant Bhoj smiling, standing by a lake at sunset">
+        <h1>Vedant Bhoj</h1>
+        <p class="lede">I build the full stack behind healthcare analytics: the stored procedures, the APIs, and the reports that physicians and administrators actually open.</p>
+        <p class="meta">Software engineer at HealthLevel, Silicon Valley. MS in Computer Engineering, San Jose State University.</p>
+        <p class="hero-actions">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/vedantbhoj/">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/vedantbhoj">GitHub</a>
+        </p>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#top">ABOUT ME</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#timeline">TIMELINE</a></li>
-          <li><a href="#recommendations">ENDORSEMENTS</a></li>
-          <li><a href="#facts">FUN STATS</a></li>
-          <!-- <li><a href="#contact">CONTACT</a></li>
-          <li><a href="https://blogs.vedantbhoj.com">MY BLOG</a></li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--end navigation-->
-  <div id="top"></div>
-  <div class="wrapper">
-    <!--about pane-->
-    <div id="about" class="section section-fixed">
-      <div id="particles-js"></div>
-      <div id="titlecard" class="container vertically-center">
-        <div class="row">
-          <div class="col-lg-6 slideRight">
-            <div class="container-fluid text-center">
-              <img class="img img-responsive img-circle profile-image center-block" src="res/images/wide_profile.jpg"
-                alt="profile_image">
-              <h2 class="inverse-color">{{resume_data.personal_info.first_name | uppercase}}
-                {{resume_data.personal_info.last_name | uppercase}}</h2>
-              <h4 class="inverse-color">MS - {{resume_data.personal_info.position }}
-                <br>{{resume_data.personal_info.institute}}</h4>
-              <div style="display: -webkit-inline-box;" ng-repeat="(key, data) in resume_data.links">
-                <a title="{{key}}" ng-repeat="item in data" class="no-decoration social-links-top" href="{{item.link}}"
-                  target="_blank">
-                  <i class="{{item.icon}}"></i>
-                </a>
-              </div>
-              <hr>
-              <h3 class="inverse-color pulse">
-                  <span class="rotate">CREATOR, INFLUENCER, DESIGNER, DEVELOPER, ENGINEER</span>
-              </h3>
+
+      <figure class="glance" aria-labelledby="glance-title">
+        <figcaption id="glance-title">Career at a glance, 2015 to now</figcaption>
+        <div class="chart" role="img" aria-label="Timeline: Cognizant from September 2015 to May 2018; Master's at San Jose State from August 2018 to May 2020; HealthLevel intern from May to December 2019; HealthLevel full-time from July 2020 to present.">
+          <div class="years" aria-hidden="true">
+            <span style="--x:0">2015</span><span style="--x:12">2016</span><span style="--x:24">2017</span><span style="--x:36">2018</span><span style="--x:48">2019</span><span style="--x:60">2020</span><span style="--x:72">2021</span><span style="--x:84">2022</span><span style="--x:96">2023</span><span style="--x:108">2024</span><span style="--x:120">2025</span><span style="--x:132">2026</span>
+          </div>
+          <div class="lane">
+            <span class="lane-name">Industry</span>
+            <div class="track">
+              <div class="bar" style="--s:8;--w:33" title="Cognizant, Sep 2015 to May 2018"><span>Cognizant</span></div>
+              <div class="bar tint" style="--s:52;--w:8" title="HealthLevel intern, May to Dec 2019"></div>
+              <div class="bar" style="--s:66;--w:77" title="HealthLevel, Jul 2020 to present"><span>HealthLevel</span></div>
             </div>
           </div>
-          <div class="col-lg-6 hidden-xs slideLeft">
-            <div class="container-fluid">
-              <h1 class="super-heading inverse-color">Hi,</h1>
-              <h4 class="inverse-color text-justify">
-              I am an experienced Software Engineer 👩‍💻 with a Masters degree 👨‍🎓 from San Jose State University.
-                My primary areas of interest include Full Stack Engineering & Web Application Development.
-                <br>
-                <br>
-                Currently, I work at a Healthcare startup in Silicon Valley, CA as Software Engineer where
-                I design and develop on the data analytics platform with a focus on full-stack engineering and UI/UX.
-                I also have 3 years of experience as a Software Engineer at Cognizant, India where I developed and
-                maintained multi-layered web applications for the IT security teams.
-                <br>
-                <br>
-                Aspiring Technical Product Manager, proficient in web technologies and have worked on C#, Java and Python as well. 
-                I enjoy developing web applications and I am skilled in HTML5, CSS, JavaScript and know frameworks like Angular and React.
-                Additionally, I have industry experience in writing SQL queries and backend API's.
-                <br>
-                <br>
-                I love eating and cooking delicious food 🍜
-              </h4>
+          <div class="lane">
+            <span class="lane-name">Campus</span>
+            <div class="track">
+              <div class="bar tint" style="--s:0;--w:5" title="BE, Vishwakarma Institute, graduated May 2015"></div>
+              <div class="bar tint" style="--s:43;--w:22" title="MS, San Jose State, Aug 2018 to May 2020"><span>MS, SJSU</span></div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="upbutton" class="container-fluid bottom-fixed">
-        <div class="container vertically-center text-center">
-          <a class="anchor-up-button" href="#skills">
-            <h2 class="up-button">
-              <span class="glyphicon glyphicon-menu-up"></span>
-            </h2>
-          </a>
+        <p class="chart-note">Light bars are study and internships. Dark bars are full-time roles.</p>
+      </figure>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="block">
+      <h2>Work</h2>
+
+      <article class="entry">
+        <p class="when">Jul 2020 to present</p>
+        <div class="what">
+          <h3>Software Engineer, Data Platform <span class="at">HealthLevel</span></h3>
+          <p>Analytics that help physicians and administrators make evidence-based decisions about hospital and department operations and clinical outcomes. I work across the stack, with a focus on user experience.</p>
+          <ul>
+            <li>Designed and built data analytics modules that answer specific business questions for hospital teams.</li>
+            <li>Cut operating cost through automation and fixes to long-standing operational problems.</li>
+          </ul>
+          <p class="links"><a href="https://www.healthlevel.com">healthlevel.com</a></p>
         </div>
-      </div>
+      </article>
 
-      <div class="contact-card">
-        <div class="container inverse-color">
-          <h1>{{resume_data.personal_info.first_name}} {{resume_data.personal_info.last_name}}</h1>
-          <h3>{{resume_data.personal_info.city}}, {{resume_data.personal_info.state}}.</h3>
-          <div style="display: inline-flex;">
-            <h4><a href="mailto:{{resume_data.personal_info.email[0]}}"
-                class="email">{{resume_data.personal_info.email[0]}} |</a></h4>
-            <h4><a href="mailto:{{resume_data.personal_info.email[1]}}"
-                class="email">{{resume_data.personal_info.email[1]}}</a></h4>
-          </div>
-          <h4> {{resume_data.personal_info.tel}}</h4>
-
-          <hr>
-
-          <div class="container-fluid text-center">
-            <div style="display: -webkit-inline-box;" ng-repeat="(key, data) in resume_data.links">
-              <a title="{{key}}" ng-repeat="item in data" class="no-decoration social-links" href="{{item.link}}"
-                target="_blank">
-                <i class="{{item.icon}}"></i>
-              </a>
-            </div>
-            <span style="float: right;margin-top: 20px;">Total Page Visits: <?php echo $visits ?></span>
-          </div>
+      <article class="entry">
+        <p class="when">May to Dec 2019</p>
+        <div class="what">
+          <h3>Software Engineering Intern <span class="at">HealthLevel</span></h3>
+          <p>Full-stack work on the analytics platform used by healthcare institutions across the United States.</p>
+          <ul>
+            <li>Shipped end-to-end features: stored procedures, API integrations, and responsive report UIs.</li>
+            <li>Improved the core product's user experience. Returned full-time after graduating.</li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!--skills pane-->
-    <div id="skills" class="section">
-      <div class="container">
-        <h1 class="center-block">Skills I picked up along the way</h1>
-        <hr>
-        <div class="row">
-          <div class="col-lg-6">
-            <br>
-            <h2>Core</h2>
-            <br>
-            <h4>C++</h4>
-            <div class="progress flat-bar">
-              <div id="cpp_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>C#</h4>
-            <div class="progress flat-bar">
-              <div id="csharp_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>JAVA</h4>
-            <div class="progress flat-bar">
-              <div id="java_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>Python</h4>
-            <div class="progress flat-bar">
-              <div id="python_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>SQL</h4>
-            <div class="progress flat-bar">
-              <div id="sql_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>NoSQL</h4>
-            <div class="progress flat-bar">
-              <div id="nosql_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <br>
-            <h2>Web Technologies</h2>
-            <br>
-            <h4>JavaScript</h4>
-            <div class="progress flat-bar">
-              <div id="js_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>Angular JS</h4>
-            <div class="progress flat-bar">
-              <div id="angular_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>ReactJS</h4>
-            <div class="progress flat-bar">
-              <div id="react_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>Node.js</h4>
-            <div class="progress flat-bar">
-              <div id="node_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>MVC</h4>
-            <div class="progress flat-bar">
-              <div id="mvc_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>Ionic Framework</h4>
-            <div class="progress flat-bar">
-              <div id="ionic_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>Bootstrap</h4>
-            <div class="progress flat-bar">
-              <div id="bootstrap_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-            <h4>PHP</h4>
-            <div class="progress flat-bar">
-              <div id="php_progress" class="progress-bar progress-bar-danger" role="progressbar">
-              </div>
-            </div>
-          </div>
+      </article>
+
+      <article class="entry">
+        <p class="when">Jan 2019 to May 2020</p>
+        <div class="what">
+          <h3>Web Developer <span class="at">San Jose State University</span></h3>
+          <p>Student assistant at eCampus (2019), then a web developer redesigning departmental sites (2020).</p>
+          <ul>
+            <li>Migrated and redesigned university department websites onto a new design template and CMS.</li>
+            <li>Built and maintained eCampus sites, graphics, and presentations.</li>
+          </ul>
+          <p class="links"><a href="https://blogs.sjsu.edu/ecampus/2019/04/18/vedant-bhoj/">eCampus profile</a></p>
         </div>
+      </article>
 
-        <div>
-          <h2>Other things I know</h2>
-          <hr>
-          <div class="skillbox" ng-repeat="skill in resume_data.things_i_know">
-            <h4>{{skill}}</h4>
-          </div>
+      <article class="entry">
+        <p class="when">Sep 2015 to May 2018</p>
+        <div class="what">
+          <h3>Programmer Analyst <span class="at">Cognizant Technology Solutions</span></h3>
+          <p>Four months of training in web technologies and MVC, then three years on the IT security team building tools to monitor and respond to threats across the organization.</p>
+          <ul>
+            <li><strong>Smart Card Access Management.</strong> Extended the web services to handle multi-city short-term access requests, cutting processing time and ticket volume by 70%. Built services and batch jobs to issue, activate, and deactivate cards across all facilities in India.</li>
+            <li><strong>Spam Reporting Tool.</strong> Built a spam-trend dashboard, LDAP-based email notifications, and an Outlook plugin that forwards suspicious emails to a service account.</li>
+            <li><strong>Cyber Security Incident Reporting.</strong> Built a dashboard for active incidents to speed response, plus a batch job for timed two-way, one-click emails.</li>
+          </ul>
+          <p class="links"><a href="res/docs/Cognizant_Q2_Award.pdf">“Beyond the Boundaries” award, 2017</a></p>
         </div>
-        </br>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="block">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <p class="when">2020</p>
+          <h3>Blockchain vehicle information system</h3>
+          <p>End-to-end car management with service prediction on the MERN stack. Ethereum provides security and decentralization; analytics improve efficiency. Research paper under review.</p>
+          <p class="tags">Node.js, React, Express, AWS, Ethereum, Truffle, Web3.js, Chart.js</p>
+          <p class="links"><a href="https://www.youtube.com/watch?v=EmloBPuF9ss">Watch the elevator pitch</a></p>
+        </article>
+        <article class="project">
+          <p class="when">2020</p>
+          <h3>The Pandemic Chronicles</h3>
+          <p>A repository of pandemic data from the past ten years, with tools to explore, compare, and visualize it.</p>
+          <p class="tags">Node.js, React, Express, Docker, Chart.js, AmCharts, Google Charts</p>
+          <p class="links"><a href="https://github.com/vedantbhoj/pandemic-chronicles">GitHub repo</a></p>
+        </article>
+        <article class="project">
+          <p class="when">2020</p>
+          <h3>MEAN stack salary calculator for HR</h3>
+          <p>An HR web app for entering employee names, salaries, and deductions, then calculating pay.</p>
+          <p class="tags">MongoDB, Express, Angular, Node.js</p>
+          <p class="links"><a href="https://github.com/vedantbhoj/MEAN-HR">GitHub repo</a></p>
+        </article>
+        <article class="project">
+          <p class="when">2018</p>
+          <h3>Cross-domain online marketplace</h3>
+          <p>E-commerce marketplace with checkout across multiple vendors, Google and Facebook sign-in, and sorting and filtering by rating and views. Pulls remote company data through cURL calls.</p>
+          <p class="links"><a href="https://marktplatz.herokuapp.com/">View project</a></p>
+        </article>
+        <article class="project">
+          <p class="when">2018</p>
+          <h3>Enterprise network on Raspberry Pis</h3>
+          <p>Configured several Raspberry Pis as a working enterprise network: router, access point, FTP and web server, DHCP and DNS, firewall, backbone routing, and ISP.</p>
+        </article>
+        <article class="project">
+          <p class="when">2015</p>
+          <h3>Face recognition across space, scale, and orientation</h3>
+          <p>A face recognition system built to stay robust under changes in lighting, expression, and occlusion, using Local Gabor Binary Pattern Histogram Sequences. Built in MATLAB with the Image Processing Toolbox.</p>
+          <p class="links"><a href="https://github.com/vedantbhoj/Security-based-Face-Recognition">See the project</a></p>
+        </article>
+        <article class="project">
+          <p class="when">2014</p>
+          <h3>LVDT displacement measurement</h3>
+          <p>Measured microscopic distances with a linear voltage displacement transducer, a signal-conditioning IC, and a PIC microcontroller driving an LCD. Involved PCB design, code optimization, and analog design.</p>
+          <p class="links"><a href="https://www.youtube.com/watch?v=okFGslv-gCQ">Watch the demo</a></p>
+        </article>
       </div>
-    </div>
-    <!--timeline pane-->
-    <div id="timeline" class="section">
-      <div class="container">
-        <h1>My Timeline</h1>
-        <hr>
-        <ul class="timeline" ng-repeat="(time, data) in resume_data.timeline">
-          <li>
-            <div class="tldate">{{time}}</div>
-          </li>
-          <li ng-repeat="item in data" ng-class="{'timeline-inverted': $parent.$index % 2 === 0}">
+    </section>
 
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>{{item.title}}</h4>
-              </div>
-              <div class="tl-body">
-                <br>
-                <div ng-repeat="line in item.desc">
-                  <p ng-bind-html="line"></p>
-                </div>
-              </div>
-              <div class="tl-heading" ng-if="item.link">
-                <h5><a style="font-family: cursive; text-decoration: underline;" href="{{item.link}}"
-                    target="_blank">Link - {{item.link_desc}}</a></h5>
-              </div>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-
-    </div>
-
-    <!--recommendations pane-->
-    <div id="recommendations" class="section">
-      <div class="container">
-        <h1>Endorsements</h1>
-        <hr>
-        <ul class="section-info" tabindex="-1">
-          <li id="ember1110" ng-repeat="(person, data) in resume_data.endorsements"
-            class="pv-recommendation-entity ember-view">
-            <div id="{{person}}" class="pv-recommendation-entity__header">
-              <a data-control-name="recommendation_details_profile" href="{{data[0].linkedIn_URL}}" id="ember1111"
-                class="pv-recommendation-entity__member ember-view">
-                <img src="{{data[0].image}}" loading="lazy" width="110" height="110" alt="{{person}}"
-                  class="EntityPhoto-circle-4 fl lazy-image ember-view">
-                <div class="pv-recommendation-entity__detail">
-                  <h3 class="t-16 t-black t-bold">{{data[0].name}}</h3>
-                  <p class="pv-recommendation-entity__headline t-14 t-black t-normal pb1" ng-bind-html="data[0].title">
-                  </p>
-                  <p class="t-12 t-black--light t-normal">{{data[0].date_association}}
-                    at<br>{{data[0].endorsed_for_company}}</p>
-                </div>
-              </a></div>
-            <div class="pv-recommendation-entity__highlights">
-              <blockquote class="pv-recommendation-entity__text relative">
-                <div id="ember1113" class="ember-view"> <span class="lt-line-clamp__raw-line">{{data[0].quote}}</span>
-
-                </div>
-              </blockquote>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="facts" class="section">
-      <div class="container">
-        <h1>Fun Stats - About Me</h1>
-        <hr>
-        <div class="row stats-row">
-          <div class="col-md-4">
-            <h3>Running</h3>
-            <div class="row">
-              <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no'
-                src='https://www.strava.com/athletes/64076709/activity-summary/6915282591d0ef55e0ec369675331f1ef35ff17b'></iframe>
-            </div>
-            <div class="row">
-              <iframe height='500' width='300' frameborder='0' allowtransparency='true' scrolling='yes'
-                src='https://www.strava.com/athletes/64076709/latest-rides/6915282591d0ef55e0ec369675331f1ef35ff17b'></iframe>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h3>Spotify Playlist</h3>
-            <iframe src="https://open.spotify.com/embed/playlist/1mtETWxPq2toMoResmso4I" width="300" height="620"
-              frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </div>
-          <div class="col-md-4">
-            <h3>GitHub</h3>
-            <div class="row" style="margin: -25px 0 -25px 0;">
-              <a href="https://github.com/vedantbhoj">
-                <img height="200" width="350"
-                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedantbhoj&hide=php&layout=compact" />
-              </a>
-            </div>
-
-            <div class="row" style="margin: -25px 0 -25px 0;">
-              <a href="https://github.com/vedantbhoj">
-                <img width="350" height="200"
-                  src="https://github-readme-stats.vercel.app/api?username=vedantbhoj&count_private=true&show_icons=true&title_color=fc5200&text_color=333&icon_color=000&bg_color=fff&line_height=25" />
-              </a>
-            </div>
-            <div class="row" style="text-align: center;">
-              <a class="twitter-timeline" data-width="350" data-height="320" data-theme="light" href="https://twitter.com/28_vedant?ref_src=twsrc%5Etfw">Tweets by 28_vedant</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-          </div>
-
+    <!-- EDUCATION -->
+    <section id="education" class="block">
+      <h2>Education</h2>
+      <article class="entry">
+        <p class="when">Aug 2018 to May 2020</p>
+        <div class="what">
+          <h3>MS, Computer Engineering <span class="at">San Jose State University</span></h3>
+          <p>Specialization in computer networks and software security. Coursework: data structures and algorithms, enterprise software platforms, operating systems, computer networks, network security.</p>
         </div>
+      </article>
+      <article class="entry">
+        <p class="when">Graduated May 2015</p>
+        <div class="what">
+          <h3>BE, Electronics and Telecommunication <span class="at">Vishwakarma Institute of Information Technology</span></h3>
+          <p>Ranked 4th in order of merit among 152 successful candidates in the 2014–15 examination. GPA 3.7.</p>
+        </div>
+      </article>
+    </section>
 
+    <!-- ENDORSEMENTS -->
+    <section id="words" class="block">
+      <h2>Endorsements</h2>
+      <p class="section-note">Recommendations from LinkedIn.</p>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>
+            <p>He was full of design ideas and innovative work-arounds to make the site do what we wanted within the constraints. Vedant is also a kind and personable colleague; it was a pleasure to work with him.</p>
+            <p class="more">He completed a top-to-bottom redesign of our department website on a completely new template and CMS. I would strongly recommend him to any potential employers and future colleagues.</p>
+          </blockquote>
+          <figcaption>
+            <img src="res/images/endorsers/gordon_douglas.jpg" width="56" height="56" alt="" loading="lazy">
+            <span><a href="https://www.linkedin.com/in/gccdouglas/">Gordon Douglas</a><br>Director, Institute for Metropolitan Studies, SJSU. Managed Vedant directly, May 2020.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote">
+          <blockquote>
+            <p>Vedant took responsibility of his modules and finished them efficiently. He immediately bought into HealthLevel's processes and documented his proposals and modules meticulously.</p>
+          </blockquote>
+          <figcaption>
+            <img src="res/images/endorsers/adway_lele.jpg" width="56" height="56" alt="" loading="lazy">
+            <span><a href="https://www.linkedin.com/in/adway-lele/">Adway Lele</a><br>Senior Software Engineer, HealthLevel. Managed Vedant directly, Jan 2020.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote">
+          <blockquote>
+            <p>He owns the task assigned to him and is capable to successfully drive the same to closure. He is capable to work independently and able to support team members for complex problems.</p>
+          </blockquote>
+          <figcaption>
+            <img src="res/images/endorsers/pradeep_kp.jpg" width="56" height="56" alt="" loading="lazy">
+            <span><a href="https://www.linkedin.com/in/pradeep-k-p-a2b1778/">Pradeep K.P</a><br>Project Manager, Cognizant. Managed Vedant directly, Jul 2019.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote">
+          <blockquote>
+            <p>I found Vedant to be pro-active, innovative, and a team player who blends well with the team. Any team would be lucky to have him by their side.</p>
+          </blockquote>
+          <figcaption>
+            <img src="res/images/endorsers/ketan_rudrurkar.jpg" width="56" height="56" alt="" loading="lazy">
+            <span><a href="https://www.linkedin.com/in/ketanrudrurkar/">Ketan Rudrurkar</a><br>Software Development Engineer, Amazon. Teammate at SJSU, Jul 2020.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote">
+          <blockquote>
+            <p>I think he is a great representative of our graduate programs at SJSU. I think he would be an excellent team member.</p>
+          </blockquote>
+          <figcaption>
+            <img src="res/images/endorsers/sheryl_ehrman.jpg" width="56" height="56" alt="" loading="lazy">
+            <span><a href="https://www.linkedin.com/in/sheryl-ehrman-64483222/">Sheryl Ehrman</a><br>Dean of Engineering, SJSU. Worked with Vedant, Jul 2020.</span>
+          </figcaption>
+        </figure>
       </div>
-    </div>
+    </section>
 
-    <!--contact pane-->
-    <div id="contact">
-      <br>
-    </div>
+    <!-- SKILLS -->
+    <section id="skills" class="block">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>JavaScript, C#, Java, Python, C++, SQL</dd></div>
+        <div><dt>Web</dt><dd>HTML5, CSS, Angular, React, Node.js, Express, PHP, AJAX, Bootstrap, REST APIs</dd></div>
+        <div><dt>Data</dt><dd>MS-SQL, MySQL, MongoDB, stored procedures, ETL data pipelines, data visualization</dd></div>
+        <div><dt>Cloud and tools</dt><dd>AWS, Docker, Git, JIRA, Confluence, Fiddler, Wireshark</dd></div>
+        <div><dt>Also</dt><dd>Agile methods, Linux, network security, cryptography, blockchain</dd></div>
+      </dl>
+    </section>
 
-    <!--gototop button-->
-    <div class="top-button text-center hidden-xs">
-      <a href="#top">
-        <h3 id="glyph-arrow" class="inverse-color">
-          <span class="glyphicon glyphicon-menu-up"></span>
-        </h3>
-      </a>
-    </div>
-  </div>
+    <!-- CONTACT -->
+    <section id="contact" class="block contact">
+      <h2>Contact</h2>
+      <p class="contact-lede">Open to conversations about full-stack, data, and product-minded engineering roles.</p>
+      <p><a class="email" href="mailto:bhoj.vedant28@gmail.com">bhoj.vedant28@gmail.com</a></p>
+      <p class="contact-links">
+        <a href="https://www.linkedin.com/in/vedantbhoj/">LinkedIn</a>
+        <a href="https://github.com/vedantbhoj">GitHub</a>
+        <a href="https://www.youtube.com/channel/UCcHcNTnEa-y-IeXqT5q8JrA">YouTube</a>
+        <a href="https://www.instagram.com/vedant.bhoj">Instagram</a>
+        <a href="https://twitter.com/28_vedant">Twitter</a>
+        <a href="res/resume/Vedant Rajay Bhoj Resume.pdf">Resume (PDF)</a>
+      </p>
+    </section>
+  </main>
 
+  <footer class="foot">
+    <p>Vedant Bhoj, San Jose, California.</p>
+  </footer>
 
+  <script src="js/main.js"></script>
 </body>
-<script src="js/particle.js"></script>
-<script src="js/particles_app.js"></script>
-<!-- <script src="js/scriptPolarClock.js"></script> -->
-
 </html>
