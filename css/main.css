@@ -198,3 +198,6 @@ h3 { font-family: var(--head); font-weight: 600; font-size: 1.3rem; line-height:
   html { scroll-behavior: auto; }
   .bar { animation: none; }
 }
+
+/* several links on one line */
+.links a + a { margin-left: 1.25rem; }
